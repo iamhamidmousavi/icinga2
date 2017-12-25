@@ -68,7 +68,7 @@ object NotificationCommand "mail-host-notification.sh" {
 
 object NotificationCommand "mail-service-notification.sh" {
     import "plugin-notification-command"
-    command = [ ysconfDir + "/icinga2/scripts/mail-service-notification.sh" ]
+    command = [ SysconfDir + "/icinga2/scripts/mail-service-notification.sh" ]
     arguments += {
     "-4" = "$notification_address$"
     "-6" = "$notification_address6$"
